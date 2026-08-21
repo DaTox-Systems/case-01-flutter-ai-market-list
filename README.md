@@ -80,13 +80,17 @@ class ShoppingListNotifier extends ChangeNotifier {
 
 ## 🛠️ Repository Structure
 
-* [`/before`](./before) — Original untouched codebase (*As-Is snapshot for comparison*).
-* [`/after`](./after) — Remediated Clean Architecture codebase (*100% working, testable Flutter app*).
-* [`/docs`](./docs) — Detailed architectural artifacts:
-  * [`AUDIT_REPORT.md`](./docs/specs/AUDIT_REPORT.md) — 4-axis diagnostic triage report.
-  * [`ARCHITECTURE_SPEC.md`](./docs/specs/ARCHITECTURE_SPEC.md) — Domain, layer, and contract specification.
-  * [`ADR-001.md`](./docs/adr/ADR-001-remediation.md) — Architectural Decision Record.
-* [`CASE_STUDY.md`](./CASE_STUDY.md) — Full in-depth case report.
+* [`/before`](./before) — Original untouched codebase (*As-Is prototype snapshot for comparison*).
+* [`/after`](./after) — Remediated Clean Architecture codebase (*100% testable production-grade Flutter app*).
+* [`CASE_STUDY.md`](./CASE_STUDY.md) — Comprehensive technical report (Autopsy, Metrics, Decisions, AI Verification).
+
+---
+
+## 🤖 Safe AI Continuation (Proof of Maintainability)
+
+The primary failure mode of AI-generated apps is that **subsequent prompts break existing features**.  
+After remediation, we tested an AI feature addition prompt (*"Add price sorting to active shopping list"*):
+* **Result:** The AI implemented `sortByPrice()` strictly inside the domain contract **without touching unrelated code and without causing a single regression**.
 
 ---
 
